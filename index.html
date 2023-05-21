@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Wallet</h1>
+        <div class="main">
+            <div class="main__column main__result">
+                <div class="diagram__block">
+                    <h2 class="diagram-title">Диаграмма расходов</h2>
+                    <div class="diagram">
+                        <svg class="chart" width="300" height="300" viewBox="0 0 50 50">
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                          </svg>
+                    </div>
+                </div>
+                <div class="legend">
+                    <ul class="legend__list">
+                        <li class="legend__item">
+                            <span class="legend__desc">Продукты</span>
+                            <span class="legend__price"></span>
+                        </li>
+                        <li class="legend__item">
+                            <span class="legend__desc">ФастФуд</span>
+                            <span class="legend__price"></span>
+                        </li>
+                        <li class="legend__item">
+                            <span class="legend__desc">Спорт</span>
+                            <span class="legend__price"></span>
+                        </li>
+                        <li class="legend__item">
+                            <span class="legend__desc">Напитки</span>
+                            <span class="legend__price"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main__column purcashes" id="purcashes">
+                <table class="purcashes__table">
+                    <thead class="purcashes__thead" id="thead">
+                        <td class="purcashes__name">Наименование</td>
+                        <td class="purcashes__category">Категория</td>
+                        <td class="purcashes__price">Цена</td>
+                    </thead>
+                    <!-- <tr class="purcashes__row">
+                        <td class="purcashes__name">Вода</td>
+                        <td class="purcashes__category">Напитки</td>
+                        <td class="purcashes__price">200</td>
+                        <td class="purcashes__del">
+                            <button class="purcashes__btn"></button>
+                        </td>
+                    </tr> -->
+                </table> 
+            </div>
+            <div class="main__column data">
+                <form action="" class="data__form" id="form">
+                    <div class="data__item">
+                        <span class="data__name">Товар:</span> <br>
+                        <input type="text" placeholder="Наименование" class="data__text" id="name">
+                    </div>
+                    <div class="data__item">
+                        <span class="data__name">Цена:</span> <br>
+                        <input type="text" class="data__text" id="price">
+                    </div>
+                    <div class="data__item">
+                        <span class="data__name">Категория:</span> <br>
+                        <select class="data__select" id="purcashes__category">
+                            <option value="" class="data__option">Продукты</option>
+                            <option value="" class="data__option">Напитки</option>
+                            <option value="" class="data__option">Спорт</option>
+                            <option value="" class="data__option">ФастФуд</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="data__btn">
+                    <button class="data__button" id="btn">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
